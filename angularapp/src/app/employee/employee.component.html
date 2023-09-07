@@ -1,0 +1,21 @@
+<p></p>
+
+<div class="form">
+  <div class="table">
+    <div class="row">
+      <label>First Name</label>
+      <label>Last Name</label>
+      <label>Department</label>
+    </div>
+    <div *ngFor="let employee of eInfo">
+      {{employee.empFName}}
+      {{employee.empLName}}
+      {{employee.dept}}
+    </div>
+    <br />
+    <br />
+    <button type="submit" (click)="addEmployee()">
+      Add Employee
+    </button>
+  </div>
+</div>
